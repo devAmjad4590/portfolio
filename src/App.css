@@ -1,7 +1,25 @@
 #root {
-  max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
   text-align: center;
 }
 
+.home {
+  position: relative;
+  height: 100vh;
+  overflow: hidden; /* Ensure content doesn't overflow */
+}
+
+.home::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('/public/bg.jpg'); /* Ensure the path is correct */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.29; /* 71% transparent */
+  z-index: -1; /* Ensure it is behind the content */
+}

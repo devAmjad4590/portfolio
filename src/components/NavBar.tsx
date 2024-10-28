@@ -22,7 +22,7 @@ function NavBar() {
   const navItems = ["Home", "Skills", "Projects", "Contact"];
 
   return (
-    <div className="flex items-center flex-row px-2 md:px-14">
+    <div className="flex items-center flex-row px-6 py-8 md:px-36 absolute top-0 left-0 w-full z-10 bg-transparent">
       <a href="#home">
         <img className="w-12 h-12" src="logo.png" alt="personal logo" />
       </a>
@@ -33,7 +33,7 @@ function NavBar() {
           {navItems.map((item, index) => (
             <NavigationMenuItem key={index}>
               <NavigationMenuLink
-                className={`${navigationMenuTriggerStyle()} text-white md:text-lg `} 
+                className={`${navigationMenuTriggerStyle()} text-white md:text-lg`} 
                 href={`#${item.toLowerCase()}`}
               >
                 {item}
@@ -42,6 +42,7 @@ function NavBar() {
           ))}
         </NavigationMenuList>
       </NavigationMenu>
+
       {/* Mobile */}
       <div className="md:hidden">
         <Sheet>
@@ -54,7 +55,7 @@ function NavBar() {
               {navItems.map((item, index) => (
                 <li key={index}>
                   <a
-                    className="block py-2 px-4 text-white h-14 text-xl"
+                    className="block py-2 px-4 text-white h-14 text-xl font-poppins font-semibold"
                     href={`#${item.toLowerCase()}`}
                   >
                     {item}
