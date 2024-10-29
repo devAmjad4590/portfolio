@@ -1,4 +1,3 @@
-import React from "react";
 import {
   NavigationMenu,
   NavigationMenuList,
@@ -12,9 +11,6 @@ import { AlignJustify } from 'lucide-react';
 import {
   Sheet,
   SheetContent,
-  SheetDescription,
-  SheetHeader,
-  SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
 
@@ -22,12 +18,13 @@ function NavBar() {
   const navItems = ["Home", "Skills", "Projects", "Contact"];
 
   return (
-    <div className="flex items-center flex-row px-6 py-8 md:px-36 absolute top-0 left-0 w-full z-10 bg-transparent">
+    <div className="flex items-center flex-row px-6 py-8 md:px-36 absolute top-0 left-0 right-0 w-full">
       <a href="#home">
         <img className="w-12 h-12" src="logo.png" alt="personal logo" />
       </a>
       <div className="flex-grow"></div>{" "}
       {/* This will push the next item to the end */}
+      {/* Desktop */}
       <NavigationMenu className="md:pr-14 hidden md:flex">
         <NavigationMenuList className="flex flex-row space-x-4 md:space-x-5">
           {navItems.map((item, index) => (

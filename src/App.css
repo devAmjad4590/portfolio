@@ -4,22 +4,10 @@
 }
 
 .home {
-  position: relative;
   height: 100vh;
-  overflow: hidden; /* Ensure content doesn't overflow */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/bg.jpg');
+  background-size: cover; 
+  background-position: center;
+  background-attachment: fixed;
 }
 
-.home::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url('/public/bg.jpg'); /* Ensure the path is correct */
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  opacity: 0.29; /* 71% transparent */
-  z-index: -1; /* Ensure it is behind the content */
-}
