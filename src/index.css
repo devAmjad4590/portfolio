@@ -2,8 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
 .text-gradient {
-  background: linear-gradient(90deg, #00C6FF 0%, #BA4FFF 50%, #9B00FF 100%);
+  background: linear-gradient(to right, #7953cd 20%, #00affa 30%, #0190cd 70%, #9B00FF 80%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  animation: gradient-animation 4s ease-in-out infinite alternate;
+  background-size: 500% auto;
+
 }

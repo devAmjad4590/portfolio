@@ -27,7 +27,7 @@ function Home() {
           alt="brand image"
           animate={{ y: [0, -20, 0] }} // Animation keyframes
           transition={{
-            duration: 6, // Duration of one cycle
+            duration: 5, // Duration of one cycle
             repeat: Infinity, // Repeat infinitely
             repeatType: "loop", // Loop the animation
           }}
