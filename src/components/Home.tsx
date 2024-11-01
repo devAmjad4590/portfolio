@@ -1,5 +1,6 @@
 // React
 import { motion } from "framer-motion"
+import { description } from "./db";
 
 function Home() {
   return (
@@ -9,14 +10,9 @@ function Home() {
           Amjad AlRasheed
         </h1>
         <p className="md:text-left text-center">
-          I’m a Software Engineering student at MMU, Malaysia, with a passion
-          for building systems and solving problems through innovative
-          solutions. I specialize in Web Development, and enjoy exploring areas
-          like Machine Learning and Computer Vision.
+          {description.msg1}
           <p className="mt-4">
-            I have experience in various programming languages and frameworks,
-            including JavaScript, Python, and React. I am always eager to learn
-            new technologies and take on challenging projects.
+            {description.msg2}
           </p>
         </p>
       </div>

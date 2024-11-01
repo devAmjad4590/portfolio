@@ -1,21 +1,14 @@
-import SkillBall from "./SkillBall";
+import BallIcon from "./BallIcons";
+import { techStack } from "./db";
 
 function Skills() {
   return (
-    <div className="md:p-5 md:px-16 px-6 skills bg-[#121212] h-[100vh]">
-      <h1 className="md:text-6xl py-4 text-4xl text-white font-poppins font-bold md:my-6">Skills</h1>
+    <div className="md:p-5 md:px-16 px-6 skills bg-[#121212] h-[65vh] md:h-[60vh]">
+      <h1 className="md:text-5xl py-4 text-4xl text-white font-poppins font-bold md:my-6">Skills</h1>
       <div className="container mx-auto md:px-64 md:p-2 flex flex-wrap justify-center items-center gap-4">
-      <SkillBall icon="test" ></SkillBall>
-      <SkillBall icon="test" ></SkillBall>
-      <SkillBall icon="test" ></SkillBall>
-      <SkillBall icon="test" ></SkillBall>
-      <SkillBall icon="test" ></SkillBall>
-      <SkillBall icon="test" ></SkillBall>
-      <SkillBall icon="test" ></SkillBall>
-      <SkillBall icon="test" ></SkillBall>
-      <SkillBall icon="test" ></SkillBall>
-      <SkillBall icon="test" ></SkillBall>
-      <SkillBall icon="test" ></SkillBall>
+      {techStack.map((tech, index) => (
+        <BallIcon key={index} icon={tech.icon} />
+      ))}
       </div>
     </div>
   );
