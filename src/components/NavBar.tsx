@@ -14,7 +14,7 @@ function NavBar() {
   const navItems = ["Home", "Skills", "Projects", "Contact"];
 
   return (
-    <div className="flex items-center flex-row px-6 py-8 md:px-36 absolute top-0 left-0 right-0 w-full">
+    <div data-aos="fade-down" className="flex items-center flex-row px-6 py-8 md:px-36 absolute top-0 left-0 right-0 w-full">
       <a href="#home">
         <motion.img whileHover={{scale: 1.2}} whileTap={{scale: 0.8}} className="w-12 h-12" src="logo.png" alt="personal logo" />
       </a>
