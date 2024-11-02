@@ -15,6 +15,24 @@ import linkedInIcon from "../assets/linkedin.svg";
 import githubIcon from "../assets/github.svg";
 import gmailIcon from "../assets/gmail.svg";    
 
+interface projectInterface {
+  title: string;
+  description: string;
+  img: string;
+  gif: string;
+  link: string;
+}
+
+export const projects: projectInterface[] = [
+  {
+    title: "ASL Hand Gesture Recognition",
+    description: `The ASL Hand Gesture Recognition using MediaPipe and CNN project is designed to recognize American Sign Language (ASL) gestures. It involves creating a dataset of hand gestures, preprocessing the images, training a Convolutional Neural Network (CNN), and detecting hand signs in real time.`,
+    img: "/projects/asl.jpg",
+    gif: "/projects/asl.gif",
+    link: "https://github.com/devAmjad4590/sign-language-detection"
+  }
+] 
+
 export const description = {
   msg1: `I’m a Software Engineering student at MMU, Malaysia, with a passion
           for building systems and solving problems through innovative
@@ -71,7 +89,7 @@ export const techStack: iconInterface[] = [
     icon: expressIcon,
   },
   {
-    name: "React",
+    name: "React & React Native",
     icon: reactIcon,
   },
   {

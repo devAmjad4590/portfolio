@@ -10,7 +10,7 @@ function Contact() {
       </h1>
       <div className="container mx-auto md:px-64 md:p-2 flex flex-wrap justify-center items-center gap-4 md:gap-9">
         {contact.map((contact, index) => (
-          <BallIcon key={index} icon={contact.icon} delay={index * 150} />
+          <BallIcon key={index} text={contact.name} link={contact.link} icon={contact.icon} delay={index * 150} />
         ))}
       </div>
     </div>
