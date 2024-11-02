@@ -4,9 +4,9 @@ import { description } from "./db";
 
 function Home() {
   return (
-    <section className="home md:min-h-[120vh] min-h-[135vh] md:pt-0 pt-36 md:pl-0 grid items-center justify-center grid-cols-1 md:grid-cols-[60%_40%]">
+    <section id="home" className="home md:min-h-[120vh] xl:min-h-screen min-h-[100vh] md:pt-0 pt-36 md:pl-0 grid items-center justify-center grid-cols-1 md:grid-cols-[60%_40%]">
       <div className="md:pl-48 p-4 home-text grid justify-center items-center text-white md:w-[90%] text-left h-auto font-poppins">
-        <h1 data-aos="fade-right" className="w-auto pb-2 mb-1 h-auto font-extrabold text-left md:text-left text-5xl md:text-6xl text-gradient">
+        <h1 data-aos="fade-right" className="w-auto pb-2 mb-1 h-auto font-extrabold text-left 3xl:text-7xl text-5xl md:text-6xl text-gradient">
           Amjad AlRasheed
         </h1>
         <p data-aos="fade-left" data-aos-duration="500" className="md:text-left text-left md:text-lg text-sm">
@@ -16,9 +16,9 @@ function Home() {
           </p>
         </p>
       </div>
-      <div data-aos="fade-left" className="md:mt-0 mt-16 image grid justify-center md:justify-start">
+      <div data-aos="fade-left" className="md:mt-0 mt-0 image grid justify-center md:justify-start">
         <motion.img
-          className="w-52 md:w-96 h-auto"
+          className="w-52 md:w-96 3xl:w-[28rem] h-auto"
           src="/brand.png"
           alt="brand image"
           animate={{ y: [0, -20, 0] }} // Animation keyframes

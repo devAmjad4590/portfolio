@@ -11,11 +11,38 @@
   }
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 .text-gradient {
   background: linear-gradient(to right, #7953cd 20%, #00affa 30%, #0190cd 70%, #9B00FF 80%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: gradient-animation 4s ease-in-out infinite alternate;
-  background-size: 500% auto;
+  background-size: 250% auto;
+}
 
+/* Fixed navbar styles */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  
+}
+
+.navbar.transparent {
+  background-color: transparent;
+}
+
+.navbar.blurry {
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  backdrop-filter: blur(10px); /* Apply blur effect */
+  -webkit-backdrop-filter: blur(10px); /* Apply blur effect for Safari */
+}
+
+.sheet{
+  z-index: 1100;
 }

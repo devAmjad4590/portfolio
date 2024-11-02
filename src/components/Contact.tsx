@@ -4,7 +4,7 @@ import { contact } from "./db";
 
 function Contact() {
   return (
-    <div className="md:p-5 md:px-16 px-6 projects bg-[#121212] min-h-[60vh]">
+    <div id="contact" className="md:p-5 md:px-16 px-6 projects bg-[#121212] min-h-[60vh]">
       <h1 data-aos="zoom-in" data-aos-duration="100" className="md:text-5xl py-4 text-3xl text-white font-poppins font-bold md:my-6">
         Connect with me
       </h1>
